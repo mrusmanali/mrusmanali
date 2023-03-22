@@ -2,14 +2,15 @@
 
 .header {
   position: relative;
-  padding: 0 0 0 120px;
+  padding-left: 120px;
   &_image {
     top: 0;
     left: 0;
     width: 90px;
     height: 90px;
-    border-radius: 50px;
     position: absolute;
+    border-radius: 50px;
+    border: 1px solid $neutral95;
   }
 
   &_name {

@@ -1,9 +1,7 @@
 @import 'pallete';
 
 .education {
-  margin-right: 20px;
   position: relative;
-  padding-bottom: 30px;
 
   &:before {
     bottom: 0;
@@ -19,14 +17,10 @@
   &_heading {
     font-size: 20px;
     margin-bottom: 10px;
+    padding-bottom: 10px;
     background-color: $neutral100;
   }
   &_content {
     padding: 0 40px;
-    line-height: 27px;
-    margin-bottom: 20px;
-  }
-  &_block {
-    margin-bottom: 30px;
   }
 }

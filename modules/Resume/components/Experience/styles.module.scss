@@ -2,7 +2,7 @@
 
 .experience {
   position: relative;
-  margin-bottom: 30px;
+
   &:before {
     bottom: 0;
     left: 2px;
@@ -21,10 +21,5 @@
   }
   &_content {
     padding: 0 40px;
-    line-height: 27px;
-    margin-bottom: 20px;
-  }
-  &_block {
-    margin-bottom: 30px;
   }
 }

@@ -1,12 +1,13 @@
-import { Container } from "@mui/material";
-import Image from "next/image";
+import clsx from "clsx";
 import React from "react";
-import BasicInfo from "./components/BasicInfo";
-import Education from "./components/Education";
-import Experience from "./components/Experience";
+import { Container, Grid } from "@mui/material";
+
 import Header from "./components/Header";
 import Profile from "./components/Profile";
 import Progress from "./components/Progress";
+import BasicInfo from "./components/BasicInfo";
+import Education from "./components/Education";
+import Experience from "./components/Experience";
 
 import styles from './styles.module.scss';
 
@@ -14,16 +15,22 @@ function Resume() {
   return (
     <Container>
       <div className={styles.resume}>
-        <div className={styles.resume_content}>
-          <div className={styles.resume_header}><Header /></div>
-          <div className={styles.resume_block}><Profile /></div>
-          <div className={styles.resume_block}><Experience /></div>
-          <div className={styles.resume_block}><Education /></div>
-        </div>
-        <div className={styles.resume_sidebar}>
-          <div className={styles.resume_block}><BasicInfo /></div>
-          <div className={styles.resume_block}><Progress /></div>
-        </div>
+        <Grid container spacing={2}>
+          <Grid item lg={9} md={8}>
+            <div className={clsx(styles.resume_content, 'br_pt50')}>
+              <div className="br_mb50"><Header /></div>
+              <div className="br_mb50"><Profile /></div>
+              <div className="br_mb50"><Experience /></div>
+              <div className="br_mb50"><Education /></div>
+            </div>
+          </Grid>
+          <Grid item lg={3} md={4}>
+            <div className={clsx(styles.resume_sidebar, 'br_pt50')}>
+              <div className="br_mb50"><BasicInfo /></div>
+              <div className="br_mb50"><Progress /></div>
+            </div>
+          </Grid>
+        </Grid>
       </div>
     </Container>
   );

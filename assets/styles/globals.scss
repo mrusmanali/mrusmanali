@@ -1,4 +1,6 @@
 @import 'pallete';
+@import 'margins';
+@import 'paddings';
 
 /*
   1. Use a more-intuitive box-sizing model.
@@ -61,7 +63,7 @@ p, h1, h2, h3, h4, h5, h6 {
 html body {
   font-size: 16px;
   color: $neutral20;
-  line-height: normal;
+  line-height: 1.7;
   font-family: 'Roboto', sans-serif;
 }
 a {

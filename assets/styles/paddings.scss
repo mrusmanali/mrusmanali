@@ -1,0 +1,29 @@
+@for $i from 0 through 50 {
+  .br_p#{$i}{
+      padding: $i+px !important;
+  }
+}
+
+@for $i from 0 through 50 {
+  .br_pt#{$i}{
+      padding-top: $i+px !important;
+  }
+}
+
+@for $i from 0 through 50 {
+  .br_pl#{$i}{
+      padding-left: $i+px !important;
+  }
+}
+
+@for $i from 0 through 50 {
+  .br_pr#{$i}{
+      padding-right: $i+px !important;
+  }
+}
+
+@for $i from 0 through 50 {
+  .br_pb#{$i}{
+      padding-bottom: $i+px !important;
+  }
+}
