@@ -4,7 +4,7 @@
   font-size: 14px;
   display: block;
   cursor: pointer;
-  padding-top: 20px;
+  padding: 20px 0;
   text-align: right;
   text-decoration: underline;
 
@@ -26,11 +26,11 @@
       left: 0;
       content: '';
       width: 100%;
-      bottom: -30px;
-      height: 20px;
+      bottom: 0;
+      height: 0;
       position: absolute;
-      box-shadow: 0 -10px 20px 10px rgb(255, 255, 255);
-      -webkit-box-shadow: 0 -10px 20px 10px rgb(255, 255, 255);
+      box-shadow: 0 0px 30px 40px rgb(255, 255, 255);
+      -webkit-box-shadow: 0 0px 30px 40px rgb(255, 255, 255);
     }
   }
 

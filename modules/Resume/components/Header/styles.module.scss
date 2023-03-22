@@ -1,4 +1,5 @@
 @import 'pallete';
+@import 'mixins';
 
 .header {
   position: relative;
@@ -32,5 +33,24 @@
     font-size: 16px;
     font-weight: 400;
     color: $neutral40;
+  }
+
+  &_button {
+    top: 50%;
+    right: 0;
+    display: none;
+    height: 40px;
+    border: none;
+    padding: 0 35px;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 50px;
+    color: $primary100;
+    background-color: $primary40;
+    transform: translateY(-50%);
+
+    @include media-md() {
+      display: block;
+    }
   }
 }
