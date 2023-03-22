@@ -1,0 +1,26 @@
+@import 'pallete';
+
+.profile {
+  padding-bottom: 30px;
+  position: relative;
+  &:before {
+    bottom: 0;
+    left: 2px;
+    width: 1px;
+    height: 100%;
+    content: '';
+    z-index: -1;
+    position: absolute;
+    background-color: $neutral90;
+  }
+  &_heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: $neutral100;
+  }
+  &_text {
+    padding: 0 40px;
+    line-height: 27px;
+    margin-bottom: 20px;
+  }
+}

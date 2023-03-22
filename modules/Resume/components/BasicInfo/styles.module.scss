@@ -1,0 +1,21 @@
+@import 'pallete';
+
+.address {
+  margin-left: 30px;
+  &_heading {
+    display: block;
+    margin-bottom: 10px;
+  }
+  &_dob {
+    display: block;
+  }
+  &_content {
+    display: block;
+  }
+  &_phone {
+    display: block;
+  }
+  &_email {
+    display: block;
+  }
+}

@@ -1,0 +1,12 @@
+// TODO:  do some research on different options and what they do
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "commonjs",
+    "target": "es6",
+    "paths": {
+      "@root/*": ["./*"]
+    }
+  },
+  "exclude": ["node_modules", "**/node_modules/*"]
+}

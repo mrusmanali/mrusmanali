@@ -1,0 +1,19 @@
+@import 'pallete';
+
+.edublock {
+  position: relative;
+  margin-bottom: 50px;
+
+  &_heading {
+    font-size: 18px;
+    font-weight: 400;
+    color: $neutral30;
+  }
+  &_duration {
+    display: block;
+    color: $primary40;
+  }
+  &_institute {
+    font-size: 14px;
+  }
+}
