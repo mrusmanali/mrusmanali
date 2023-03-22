@@ -1,14 +1,9 @@
 const path = require('path')
 
 module.exports = {
-  async redirects() {
-    return [{
-      source: '/',
-      permanent: false,
-      destination: '/resume'
-    }]
-  },
+  output: 'export',
   images: {
+    unoptimized: true,
     domains: ["firebasestorage.googleapis.com"]
   },
   sassOptions: {
