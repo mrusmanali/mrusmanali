@@ -34,7 +34,7 @@ function ExpBlock({data}) {
           })}
         </ul>
       </div>
-      {hidden && <a onClick={onClickToggle} className={styles.exptoggle}>...see more</a>}
+      {hidden && <a onClick={onClickToggle} className={styles.exptoggle}>see more</a>}
     </>
   );
 }

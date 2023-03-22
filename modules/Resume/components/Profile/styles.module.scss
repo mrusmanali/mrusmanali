@@ -1,8 +1,8 @@
 @import 'pallete';
 
 .profile {
-  padding-bottom: 30px;
   position: relative;
+  margin-bottom: 30px;
   &:before {
     bottom: 0;
     left: 2px;
@@ -13,13 +13,17 @@
     position: absolute;
     background-color: $neutral90;
   }
+
   &_heading {
     font-size: 20px;
     margin-bottom: 10px;
+    padding-bottom: 10px;
     background-color: $neutral100;
   }
-  &_text {
+  &_content {
     padding: 0 40px;
+  }
+  &_text {
     line-height: 27px;
     margin-bottom: 20px;
   }
