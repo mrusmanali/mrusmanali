@@ -1,21 +1,22 @@
 @import 'pallete';
 
-.address {
 
+.infoblock {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  line-height: normal;
+  &_icon {}
+  &_text, &_link {
+    margin: 0 5px;
+  }
+  &_link {
+    text-decoration: underline;
+  }
+}
+.address {
   &_heading {
     display: block;
     margin-bottom: 10px;
-  }
-  &_dob {
-    display: block;
-  }
-  &_content {
-    display: block;
-  }
-  &_phone {
-    display: block;
-  }
-  &_email {
-    display: block;
   }
 }
