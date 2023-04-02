@@ -1,6 +1,11 @@
 @import 'pallete';
 @import 'mixins';
 
+.download {
+  right: 20px;
+  bottom: 20px;
+  position: fixed;
+}
 .resume {
   &_content {
     border-right: 1px solid $neutral80;

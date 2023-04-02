@@ -10,27 +10,31 @@ import Education from "./components/Education";
 import Experience from "./components/Experience";
 
 import styles from './styles.module.scss';
+import Download from "./components/Download";
 
 function Resume() {
   return (
     <Container>
       <div className={styles.resume}>
-        <Grid container spacing={4}>
-          <Grid item lg={9} md={8} sm={12}>
-            <div className={clsx(styles.resume_content, 'br_pt50')}>
-              <div className="br_mb50"><Header /></div>
-              <div className="br_mb50"><Profile /></div>
-              <div className="br_mb50"><Experience /></div>
-              <div className="br_mb50"><Education /></div>
-            </div>
+        <div id="printable">
+          <Grid container spacing={4}>
+            <Grid item lg={9} md={8} sm={12}>
+              <div className={clsx(styles.resume_content, 'br_pt50')}>
+                <div className="br_mb50"><Header /></div>
+                <div className="br_mb50"><Profile /></div>
+                <div className="br_mb50"><Experience /></div>
+                <div className="br_mb50"><Education /></div>
+              </div>
+            </Grid>
+            <Grid item lg={3} md={4} sm={12}>
+              <div className={clsx(styles.resume_sidebar, 'br_pt50')}>
+                <div className="br_mb50"><BasicInfo /></div>
+                <div className="br_mb50"><Progress /></div>
+              </div>
+            </Grid>
           </Grid>
-          <Grid item lg={3} md={4} sm={12}>
-            <div className={clsx(styles.resume_sidebar, 'br_pt50')}>
-              <div className="br_mb50"><BasicInfo /></div>
-              <div className="br_mb50"><Progress /></div>
-            </div>
-          </Grid>
-        </Grid>
+        </div>
+        <div className={styles.download}><Download /></div>
       </div>
     </Container>
   );
