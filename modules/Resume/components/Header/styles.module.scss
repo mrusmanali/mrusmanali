@@ -15,11 +15,13 @@
   }
 
   &_name {
+    line-height: 1;
     font-size: 30px;
     color: $neutral30;
-    margin-bottom: 7px;
+    margin-bottom: 12px;
   }
   &_role {
+    line-height: 1;
     font-size: 21px;
     font-weight: 400;
     color: $primary40;
@@ -30,6 +32,7 @@
     display: inline-block;
   }
   &_location {
+    line-height: 1;
     font-size: 16px;
     font-weight: 400;
     color: $neutral40;

@@ -27,14 +27,14 @@ function Resume() {
               </div>
             </Grid>
             <Grid item lg={3} md={4} sm={12}>
-              <div className={clsx(styles.resume_sidebar, 'br_pt50')}>
+              <div className={clsx(styles.resume_sidebar, 'br_pt50', styles.active)}>
                 <div className="br_mb50"><BasicInfo /></div>
                 <div className="br_mb50"><Progress /></div>
               </div>
             </Grid>
           </Grid>
         </div>
-        <div className={styles.download}><Download /></div>
+        {/* <div className={styles.download}><Download /></div> */}
       </div>
     </Container>
   );

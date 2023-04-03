@@ -1,4 +1,5 @@
 @import 'pallete';
+@import 'mixins';
 
 .profile {
   position: relative;
@@ -25,5 +26,14 @@
   }
   &_text {
     margin-bottom: 25px;
+  }
+
+  @include media-md() {
+    &:before {
+      display: none;
+    }
+    &_content {
+      padding: 0;
+    }
   }
 }

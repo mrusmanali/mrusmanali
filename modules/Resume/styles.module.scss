@@ -7,11 +7,24 @@
   position: fixed;
 }
 .resume {
-  &_content {
-    border-right: 1px solid $neutral80;
+  position: relative;
 
-    @include media-md() {
-      border: none;
+  @include media-md() {
+
+    &_sidebar {
+      top: 0;
+      right: 0;
+      position: fixed;
+      padding: 0 20px;
+      border-left: 1px solid $neutral80;
+      transform: translateX(100%);
+      background-color: $neutral100;
+
+      @include transition(all 200ms ease);
+
+      &.active {
+        transform: translateX(0%);
+      }
     }
   }
 }
