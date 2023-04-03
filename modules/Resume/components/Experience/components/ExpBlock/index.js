@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import styles from './styles.module.scss';
 
 function ExpBlock({data}) {
-  const [hidden, setHidden] = useState(true);
+  const [hidden, setHidden] = useState(false);
 
   const onClickToggle = () => {
     setHidden(false);

@@ -15,8 +15,6 @@ function Header() {
       <h1 className={styles.header_name}>Usman Ali Shauket</h1>
       <h2 className={styles.header_role}>Front-end Developer <p className={styles.header_tech}>React | React Native | Angular | NodeJS</p></h2>
       <h3 className={styles.header_location}>Dubai - United Arab Emirates</h3>
-
-      <button className={styles.header_button}>My skills</button>
     </div>
   );
 }

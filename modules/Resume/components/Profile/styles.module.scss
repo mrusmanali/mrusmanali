@@ -12,7 +12,7 @@
     content: '';
     z-index: -1;
     position: absolute;
-    background-color: $neutral90;
+    background-color: $neutral80;
   }
 
   &_heading {
@@ -28,12 +28,4 @@
     margin-bottom: 25px;
   }
 
-  @include media-md() {
-    &:before {
-      display: none;
-    }
-    &_content {
-      padding: 0;
-    }
-  }
 }
