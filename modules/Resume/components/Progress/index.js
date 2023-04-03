@@ -1,5 +1,6 @@
 import { map } from "lodash";
 import React from "react";
+import Heading from "../Heading";
 
 import data from './data';
 import styles from './styles.module.scss';
@@ -11,7 +12,7 @@ function Progress() {
       {map(data, item => {
         return (
           <div key={item?.key} className={styles.progress_box}>
-            <h3 className={styles.progress_heading}>{item?.title}</h3>
+            <Heading value={item?.title} />
             {map(item?.blocks, block => {
               return (
                 <div key={block?.key} className={styles.progress_block}>

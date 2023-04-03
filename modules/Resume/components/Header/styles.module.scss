@@ -22,19 +22,28 @@
   }
   &_role {
     line-height: 1;
-    font-size: 21px;
+    font-size: 23px;
     font-weight: 400;
     color: $primary40;
   }
   &_tech {
-    font-size: 15px;
-    margin-bottom: 5px;
+    font-size: 17px;
+    margin-bottom: 15px;
     display: inline-block;
   }
   &_location {
     line-height: 1;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
     color: $neutral40;
+  }
+
+  @include media-sm() {
+    padding-left: 0px;
+    padding-top: 140px;
+
+    &_image {
+      top: 30px;
+    }
   }
 }

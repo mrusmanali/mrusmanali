@@ -13,19 +13,19 @@ import styles from './styles.module.scss';
 
 function Resume() {
   return (
-    <div className={clsx(styles.main, styles.active)}>
+    <div className={clsx(styles.resume)}>
       <Container>
         <Grid container spacing={4}>
-          <Grid className={styles.content} item lg={9} md={8} sm={12}>
-            <div className={clsx(styles.resume_content, 'br_pt50')}>
+          <Grid className={styles.content} item lg={9} md={8} xs={12}>
+            <div className={clsx(styles.resume_main)}>
               <div className="br_mb50"><Header /></div>
               <div className="br_mb50"><Profile /></div>
               <div className="br_mb50"><Experience /></div>
               <div className="br_mb50"><Education /></div>
             </div>
           </Grid>
-          <Grid className={styles.side} item lg={3} md={4} sm={12}>
-            <div className={clsx(styles.resume_sidebar, 'br_pt50', styles.active)}>
+          <Grid className={styles.side} item lg={3} md={4} xs={12}>
+            <div className={clsx(styles.resume_side)}>
               <div className="br_mb50"><BasicInfo /></div>
               <div className="br_mb50"><Progress /></div>
             </div>

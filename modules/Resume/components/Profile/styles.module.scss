@@ -15,12 +15,6 @@
     background-color: $neutral80;
   }
 
-  &_heading {
-    font-size: 20px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    background-color: $neutral100;
-  }
   &_content {
     padding: 0 40px;
   }
@@ -28,4 +22,18 @@
     margin-bottom: 25px;
   }
 
+  @include media-md() {
+    &_content {
+      padding-right: 0;
+    }
+  }
+
+  @include media-sm() {
+    &:before {
+      display: none;
+    }
+    &_content {
+      padding: 0;
+    }
+  }
 }

@@ -1,11 +1,12 @@
 import React from "react";
+import Heading from "../Heading";
 
 import styles from "./styles.module.scss";
 
 function Profile() {
   return (
     <div className={styles.profile}>
-      <h3 className={styles.profile_heading}>Profile</h3>
+      <Heading value="Profile" />
       <div className={styles.profile_content}>
         <p className={styles.profile_text}>
           I am an accomplished front-end developer with expertise that spans the

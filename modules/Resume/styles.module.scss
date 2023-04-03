@@ -1,9 +1,13 @@
 @import 'pallete';
 @import 'mixins';
 
-.main {}
-.content,
-.side {
+.resume {
+  &_main, &_side {
+    padding-top: 40px;
+  }
+}
+
+.content, .side {
   border-width: 0;
   border-style: solid;
   border-color: $neutral80;
@@ -21,5 +25,16 @@
 @include media-md() {
   .content, .side {
     border: none;
+  }
+  .side {
+    border-top: 1px solid $neutral80;
+  }
+}
+
+@include media-sm {
+  .resume {
+    &_main, &_side {
+      padding-top: 0px;
+    }
   }
 }

@@ -1,13 +1,14 @@
 import { IconAt, IconCalendarEvent, IconMapPin, IconPhone } from "@tabler/icons-react";
 import clsx from "clsx";
 import React from "react";
+import Heading from "../Heading";
 
 import styles from './styles.module.scss';
 
 function BasicInfo() {
   return (
     <div className={styles.address}>
-      <h3 className={styles.address_heading}>Details</h3>
+      <Heading value="Details" />
 
       <div className={clsx(styles.infoblock, 'br_mb12')}>
         <IconCalendarEvent size={20} stroke={1.8} className={styles.infoblock_icon} />
