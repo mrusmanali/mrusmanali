@@ -1,0 +1,15 @@
+@import 'pallete';
+@import 'variables';
+
+.appbar {
+  height: $headerHeight;
+  border-bottom: 1px solid $neutral95;
+
+  &_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
