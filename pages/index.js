@@ -1,2 +1,2 @@
-import Resume from "@root/modules/Resume";
-export default Resume;
+import Home from "@root/modules/Blog/Home";
+export default Home;
