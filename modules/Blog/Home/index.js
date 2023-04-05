@@ -1,7 +1,7 @@
 import React from "react";
+import Layout from "@root/common/Layout";
 
 import styles from './styles.module.scss';
-import Layout from "../Components/Layout";
 
 function BlogHome() {
   return (

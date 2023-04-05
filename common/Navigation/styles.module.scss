@@ -1,0 +1,13 @@
+@import 'pallete';
+
+.navigation {
+  &_list {}
+  &_item {
+    display: inline-block;
+  }
+  &_link {
+    display: block;
+    padding: 0 15px;
+    font-weight: 500;
+  }
+}
