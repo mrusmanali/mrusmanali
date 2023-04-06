@@ -1,29 +1,29 @@
-@for $i from 0 through 50 {
-  .br_m#{$i}{
+@for $i from 0 through 100 {
+  .us_m#{$i}{
       margin: $i+px !important;
   }
 }
 
-@for $i from 0 through 50 {
-  .br_mt#{$i}{
+@for $i from 0 through 100 {
+  .us_mt#{$i}{
       margin-top: $i+px !important;
   }
 }
 
-@for $i from 0 through 50 {
-  .br_ml#{$i}{
+@for $i from 0 through 100 {
+  .us_ml#{$i}{
       margin-left: $i+px !important;
   }
 }
 
-@for $i from 0 through 50 {
-  .br_mr#{$i}{
+@for $i from 0 through 100 {
+  .us_mr#{$i}{
       margin-right: $i+px !important;
   }
 }
 
-@for $i from 0 through 50 {
-  .br_mb#{$i}{
+@for $i from 0 through 100 {
+  .us_mb#{$i}{
       margin-bottom: $i+px !important;
   }
 }

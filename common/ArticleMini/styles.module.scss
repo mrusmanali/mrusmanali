@@ -1,0 +1,50 @@
+@import 'pallete';
+
+.articlemini {
+  position: relative;
+  &_head {
+    margin-bottom: 20px;
+  }
+  &_thumb {
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 15px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &_category {
+    display: block;
+    margin-bottom: 5px;
+    color: $neutral50;
+  }
+  &_heading {
+    margin: 0;
+    font-size: 18px;
+    color: $neutral20;
+    margin-bottom: 13px;
+  }
+  &_info {
+    display: flex;
+    flex-direction: row;
+    margin: 0 -7px;
+  }
+  &_posted {
+    padding: 0 7px;
+    display: flex;
+    color: $neutral40;
+    align-items: center;
+    flex-direction: row;
+    &_icon {}
+    &_text {
+      font-size: 15px;
+      margin: 0 5px;
+    }
+  }
+  &_summary {
+    line-height: 1.5;
+  }
+}

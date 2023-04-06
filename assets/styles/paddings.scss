@@ -1,29 +1,29 @@
-@for $i from 0 through 50 {
-  .br_p#{$i}{
+@for $i from 0 through 100 {
+  .us_p#{$i}{
       padding: $i+px !important;
   }
 }
 
-@for $i from 0 through 50 {
-  .br_pt#{$i}{
+@for $i from 0 through 100 {
+  .us_pt#{$i}{
       padding-top: $i+px !important;
   }
 }
 
-@for $i from 0 through 50 {
-  .br_pl#{$i}{
+@for $i from 0 through 100 {
+  .us_pl#{$i}{
       padding-left: $i+px !important;
   }
 }
 
-@for $i from 0 through 50 {
-  .br_pr#{$i}{
+@for $i from 0 through 100 {
+  .us_pr#{$i}{
       padding-right: $i+px !important;
   }
 }
 
-@for $i from 0 through 50 {
-  .br_pb#{$i}{
+@for $i from 0 through 100 {
+  .us_pb#{$i}{
       padding-bottom: $i+px !important;
   }
 }
