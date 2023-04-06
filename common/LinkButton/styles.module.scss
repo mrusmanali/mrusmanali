@@ -1,4 +1,5 @@
 @import 'pallete';
+@import 'mixins';
 
 .linkbutton {
   :global(.MuiButton-root) {
@@ -6,6 +7,12 @@
 
     &:hover {
       background-color: $primary30;
+    }
+  }
+
+  @include media-sm() {
+    :global(.MuiButton-root) {
+      font-size: 10px;
     }
   }
 }

@@ -1,15 +1,51 @@
+@import 'mixins';
 @import 'pallete';
 @import 'variables';
 
+.drawer {
+  :global(.MuiDrawer-paper) {
+    width: $sidebarWidth;
+  }
+}
 .appbar {
   height: $headerHeight;
   border-bottom: 1px solid $neutral95;
 
+  &_menutoggle {
+    left: 0;
+    top: 50%;
+    display: none;
+    color: $neutral20;
+    position: absolute;
+    transform: translateY(-50%);
+  }
+
+  &_contactlink {
+    top: 50%;
+    right: 0;
+    position: absolute;
+    transform: translateY(-50%);
+  }
+
   &_container {
     height: 100%;
     display: flex;
+    position: relative;
     align-items: center;
     flex-direction: row;
+    padding: 0 155px 0 0px;
     justify-content: space-between;
+  }
+
+  @include media-sm() {
+    height: $headerHeight - 10;
+
+    &_menutoggle {
+      display: block;
+    }
+    &_container {
+      padding: 0;
+      justify-content: center;
+    }
   }
 }

@@ -1,0 +1,12 @@
+@import 'pallete';
+
+.contact {
+  :global(.MuiButtonBase-root) {
+    color: $primary100;
+    background-color: $primary40;
+
+    &:hover {
+      background-color: $primary30;
+    }
+  }
+}

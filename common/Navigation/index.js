@@ -1,18 +1,19 @@
+import clsx from "clsx";
 import React from "react";
 
 import styles from './styles.module.scss';
-import LinkButton from "../LinkButton";
-import { Stack } from "@mui/material";
 
-function Navigation() {
+function Navigation({variant = 'horizontal'}) {
+  const isVertical = variant === 'vertical';
+  const isHorizontal = variant === 'horizontal';
+
   return (
-    <Stack direction="row" alignItems="center" spacing={1} className={styles.navigation}>
+    <div className={clsx(styles.navigation, isVertical && styles.vertical, isHorizontal && styles.horizontal)}>
       <ul className={styles.navigation_list}>
         <li className={styles.navigation_item}><a className={styles.navigation_link}>Home</a></li>
         <li className={styles.navigation_item}><a className={styles.navigation_link}>Resume</a></li>
       </ul>
-      <LinkButton label="Contact me" attributes={{size:'small'}} />
-    </Stack>
+    </div>
   );
 }
 

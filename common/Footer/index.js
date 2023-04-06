@@ -1,13 +1,13 @@
 import React from "react";
 
 import styles from './styles.module.scss';
-import { Container } from "@mui/material";
+import Wrapper from "../Wrapper";
 
 function Footer() {
   return (
-    <Container>
+    <Wrapper>
       <div>Footer</div>
-    </Container>
+    </Wrapper>
   );
 }
 

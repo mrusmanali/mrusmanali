@@ -1,17 +1,17 @@
 import React from "react";
+import Header from "@root/common/Header";
+import Footer from "@root/common/Footer";
+import Wrapper from "@root/common/Wrapper";
 
 import styles from './styles.module.scss';
-import Header from "../Header";
-import Footer from "../Footer";
-import { Container } from "@mui/material";
 
 function Layout({children}) {
   return (
     <div>
       <Header />
-      <Container>
+      <Wrapper>
         {children}
-      </Container>
+      </Wrapper>
       <Footer />
     </div>
   );

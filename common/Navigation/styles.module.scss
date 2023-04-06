@@ -1,13 +1,30 @@
 @import 'pallete';
+@import 'mixins';
 
 .navigation {
   &_list {}
   &_item {
-    display: inline-block;
+
+    .vertical & {
+      display: block;
+    }
+
+    .horizontal & {
+      display: inline-block;
+    }
   }
   &_link {
     display: block;
     padding: 0 15px;
     font-weight: 500;
+
+    .vertical & {
+      padding: 15px 20px;
+
+      &:hover {
+        color: $primary40;
+        background-color: $primary100;
+      }
+    }
   }
 }
