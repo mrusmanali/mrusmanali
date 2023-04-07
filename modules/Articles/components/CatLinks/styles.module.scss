@@ -1,0 +1,28 @@
+@import 'pallete';
+
+.catlinks {
+  &_heading {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+  &_list {}
+  &_item {
+    padding: 5px 0;
+  }
+  &_link {
+    cursor: pointer;
+    font-weight: 500;
+    padding: 5px 15px;
+    color: $neutral40;
+    border-radius: 50px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid $neutral40;
+
+    &:hover {
+      color: $primary40;
+      border-color: $primary40;
+    }
+  }
+}

@@ -11,16 +11,16 @@ import Grid2 from "@mui/material/Unstable_Grid2";
 function BlogHome() {
   return (
     <Layout>
-      <div className="us_row us_small_p20 us_pt20">
+      <div className="us_row us_small_p20">
         <div className="us_columns us_small_17">
-          <div className="us_row us_small_p20">
-            <div className="us_columns us_small_24 us_mb90"><ArticleMini /></div>
-            <div className="us_columns us_small_12 us_mb20"><ArticleMini /></div>
-            <div className="us_columns us_small_12 us_mb20"><ArticleMini /></div>
+          <div className="us_row us_small_p20 us_mt40">
+            <div className="us_columns us_small_24 us_mb70"><ArticleMini variant="hero" /></div>
+            <div className="us_columns us_small_24 us_mb70"><ArticleMini /></div>
+            <div className="us_columns us_small_24 us_mb70"><ArticleMini /></div>
           </div>
         </div>
         <div className="us_columns us_small_7">
-          <div className="cs_small_24 us_columns"><IntroBlock /></div>
+          <div className="cs_small_24 us_columns us_mt50 us_mb50"><IntroBlock /></div>
           <div className="cs_small_24 us_columns"><CatLinks /></div>
         </div>
       </div>

@@ -1,14 +1,21 @@
 @import 'pallete';
+@import 'variables';
 
 .articlemini {
-  position: relative;
   &_head {
+    display: block;
     margin-bottom: 20px;
+    position: relative;
+    padding-left: 230px;
   }
   &_thumb {
+    left: 0;
+    top: 0;
+    width: 210px;
     overflow: hidden;
-    border-radius: 4px;
+    position: absolute;
     margin-bottom: 15px;
+    border-radius: $borderRadius;
 
     img {
       width: 100%;
@@ -18,14 +25,20 @@
   }
   &_category {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     color: $neutral50;
   }
   &_heading {
     margin: 0;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
     color: $neutral20;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
+  }
+
+  &_head:hover &_heading {
+    color: $neutral0;
   }
   &_info {
     display: flex;
@@ -44,7 +57,12 @@
       margin: 0 5px;
     }
   }
-  &_summary {
-    line-height: 1.5;
+  &_summary {}
+  &_link {
+    color: $primary40;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
