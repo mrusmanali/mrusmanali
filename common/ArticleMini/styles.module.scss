@@ -5,10 +5,7 @@
 .articlemini {
   &_head {
     display: block;
-    // min-height: 120px;
-    // position: relative;
     margin-bottom: 30px;
-    // padding-left: 230px;
   }
   &_category {
     display: block;
@@ -17,7 +14,7 @@
   }
   &_heading {
     margin: 0;
-    font-size: 28px;
+    font-size: 1.7em;
     font-weight: 600;
     line-height: 1.2;
     color: $neutral20;
@@ -27,11 +24,7 @@
     position: relative;
   }
   &_thumb {
-    // left: 0;
-    // top: 0;
-    // width: 310px;
     overflow: hidden;
-    // position: absolute;
     margin-bottom: 30px;
     border-radius: $borderRadius;
 
@@ -47,11 +40,12 @@
   }
   &_info {
     display: flex;
+    margin: -7px;
+    flex-wrap: wrap;
     flex-direction: row;
-    margin: 0 -7px;
   }
   &_posted {
-    padding: 0 7px;
+    padding: 7px;
     display: flex;
     color: $neutral40;
     align-items: center;
@@ -59,7 +53,7 @@
     &_icon {}
     &_text {
       margin: 0 5px;
-      font-size: 1em;
+      font-size: 0.95em;
     }
   }
   &_summary {

@@ -11,7 +11,7 @@ function ArticleMini({data}) {
     <div className={clsx(styles.articlemini)}>
       <Link href="" className={styles.articlemini_head}>
         <span className={styles.articlemini_category}>in Node JS</span>
-        <h3 className={styles.articlemini_heading}>{data?.title}</h3>
+        <h1 className={styles.articlemini_heading}>{data?.title}</h1>
         <div className={styles.articlemini_info}>
           <div className={styles.articlemini_posted}>
             <IconClock className={styles.articlemini_posted_icon} size={20} />

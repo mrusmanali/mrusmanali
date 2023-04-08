@@ -12,7 +12,7 @@ function BlogHome() {
   return (
     <Layout>
       <div className="us_row us_small_p20">
-        <div className="us_columns us_xlarge_17 us_large_16">
+        <div className="us_columns us_medium_16">
           <div className="us_row us_small_p15 us_mt40">
             {map(data, (item, index) => {
               return (
@@ -23,9 +23,9 @@ function BlogHome() {
             })}
           </div>
         </div>
-        <div className="us_columns us_xlarge_7 us_large_8">
+        <div className="us_columns us_medium_8">
           <div className="cs_small_24 us_columns us_mt50 us_mb50"><IntroBlock /></div>
-          <div className="cs_small_24 us_columns"><CatLinks /></div>
+          <div className="cs_small_24 us_columns us_mb100"><CatLinks /></div>
         </div>
       </div>
     </Layout>
