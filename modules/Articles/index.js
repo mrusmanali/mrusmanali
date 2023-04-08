@@ -1,22 +1,26 @@
 import React from "react";
-import { Grid } from "@mui/material";
+import { map } from "lodash";
 import Layout from "@root/common/Layout";
-
-import styles from './styles.module.scss';
-import IntroBlock from "./components/IntroBlock";
 import CatLinks from "./components/CatLinks";
+import IntroBlock from "./components/IntroBlock";
 import ArticleMini from "@root/common/ArticleMini";
-import Grid2 from "@mui/material/Unstable_Grid2";
+
+import data from './data';
+import styles from './styles.module.scss';
 
 function BlogHome() {
   return (
     <Layout>
       <div className="us_row us_small_p20">
         <div className="us_columns us_xlarge_17 us_large_16">
-          <div className="us_row us_small_p20 us_mt40">
-            <div className="us_columns us_small_24 us_mb70"><ArticleMini variant="hero" /></div>
-            <div className="us_columns us_small_24 us_mb70"><ArticleMini /></div>
-            <div className="us_columns us_small_24 us_mb70"><ArticleMini /></div>
+          <div className="us_row us_small_p15 us_mt40">
+            {map(data, (item, index) => {
+              return (
+                <div key={index} className="us_columns us_small_24 us_mb100">
+                  <ArticleMini data={item} />
+                </div>
+              )
+            })}
           </div>
         </div>
         <div className="us_columns us_xlarge_7 us_large_8">
