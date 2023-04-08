@@ -1,7 +1,6 @@
 const path = require('path')
 
 module.exports = {
-  output: 'export',
   images: {
     unoptimized: true,
     domains: ["firebasestorage.googleapis.com"]

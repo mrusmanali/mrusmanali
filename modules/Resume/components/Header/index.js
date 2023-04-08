@@ -6,7 +6,7 @@ import styles from "./styles.module.scss";
 function Header() {
   return (
     <div className={styles.header}>
-      <Image
+      <img
         width={720}
         height={720}
         className={styles.header_image}

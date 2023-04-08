@@ -24,9 +24,11 @@ function Header() {
     >
       <Wrapper>
         <div className={styles.appbar_container}>
-          <IconButton onClick={toggleDrawer} className={styles.appbar_menutoggle}>
-            <IconMenu2 size={25} stroke={2.5} />
-          </IconButton>
+          <div className={styles.appbar_menutoggle}>
+            <IconButton onClick={toggleDrawer} >
+              <IconMenu2 size={25} stroke={2.5} />
+            </IconButton>
+          </div>
 
           <LogoLink />
 
