@@ -3,16 +3,16 @@ import '@root/assets/styles/globals.scss';
 import FirebaseService from '@root/services/firebase';
 import AnalyticsService from '@root/services/analytics';
 import DatabaseService from '@root/services/database';
+import AuthService from '@root/services/auth';
 
 function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     FirebaseService.init();
     AnalyticsService.init();
+    AuthService.init();
 
-    DatabaseService.fetchList('articles')
-    .then(data=>console.log(data))
-    .catch(error=>console.log(error));
+    AuthService.$user.subscribe(user=>console.log(user));
   }, [])
 
   return (
