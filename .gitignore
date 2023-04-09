@@ -39,4 +39,5 @@ jspm_packages
 
 # firebase
 .firebase
+firebaseconfig.js
 out

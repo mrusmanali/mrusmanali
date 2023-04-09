@@ -1,13 +1,22 @@
-import React from 'react';
-// import Script from 'next/script';
+import React, { useEffect } from 'react';
 import '@root/assets/styles/globals.scss';
+import FirebaseService from '@root/services/firebase';
+import AnalyticsService from '@root/services/analytics';
+import DatabaseService from '@root/services/database';
 
 function MyApp({ Component, pageProps }) {
+
+  useEffect(() => {
+    FirebaseService.init();
+    AnalyticsService.init();
+
+    DatabaseService.fetchList('articles')
+    .then(data=>console.log(data))
+    .catch(error=>console.log(error));
+  }, [])
+
   return (
-    <>
-      {/* <Script strategy="beforeInteractive" src="./scripts/html2canvas.min.js" /> */}
-      <Component {...pageProps} />
-    </>
+    <Component {...pageProps} />
   )
 }
 
