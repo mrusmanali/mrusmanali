@@ -1,6 +1,6 @@
 import React from "react";
 import { map } from "lodash";
-import Layout from "@root/common/Layout";
+import Layout from "@root/common/Layout/Main";
 import CatLinks from "./components/CatLinks";
 import IntroBlock from "./components/IntroBlock";
 import ArticleMini from "@root/common/ArticleMini";

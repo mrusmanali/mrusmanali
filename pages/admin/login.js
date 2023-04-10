@@ -1,2 +1,2 @@
-import AdminLogin from "@root/modules/Admin/login";
+import AdminLogin from "@root/modules/Login";
 export default AdminLogin;

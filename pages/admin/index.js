@@ -1,2 +1,2 @@
-import AdminDashboard from "@root/modules/Admin/Dashboard";
+import AdminDashboard from "@root/modules/Dashboard";
 export default AdminDashboard;
