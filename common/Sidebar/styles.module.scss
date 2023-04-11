@@ -1,0 +1,12 @@
+@import 'variables';
+
+.sidebar {
+  &_logo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: $headerHeight;
+    justify-content: center;
+  }
+}
