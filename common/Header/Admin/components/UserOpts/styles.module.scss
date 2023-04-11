@@ -1,0 +1,33 @@
+@import 'pallete';
+
+.useropts {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  &_content {
+    display: flex;
+    padding: 0 20px;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  &_greet {
+    font-weight: 400;
+  }
+  &_name {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  &_thumb {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    color: $primary100;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $primary40;
+  }
+  &_icon {}
+}

@@ -1,11 +1,16 @@
 import React, { useState } from "react";
+import { useRouter } from "next/router";
+import AuthService from "@root/services/auth";
 import { Button, TextField } from "@mui/material";
 
 import styles from './styles.module.scss';
-import AuthService from "@root/services/auth";
 
 function Login() {
-  const [formData, setFormData] = useState({});
+  const router = useRouter();
+  const [formData, setFormData] = useState({
+    email: 'mrusmanali95@gmail.com',
+    password: 'Sp@289bb'
+  });
 
   const onChangeInput = (key, value) => {
     setFormData({...formData, [key]: value});
@@ -13,7 +18,10 @@ function Login() {
 
   const onClickButton = () => {
     AuthService.login(formData?.email, formData?.password)
-    .then(result=>console.log(result))
+    .then(() => {
+      let backUrl = (router.query.back) ? router.query.back : '/admin';
+      router.replace(backUrl);
+    })
     .catch(error=>console.log(error));
   }
 

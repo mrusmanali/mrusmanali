@@ -2,7 +2,7 @@ import { hasIn, isNull } from 'lodash';
 import { BehaviorSubject } from 'rxjs';
 import FirebaseService from '@root/services/firebase';
 import { filter as rxfilter, map as rxmap } from 'rxjs/operators';
-import { getAuth, onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
+import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 
 class Auth {
   constructor() {
@@ -30,6 +30,10 @@ class Auth {
 
   login(email, password) {
     return signInWithEmailAndPassword(this.auth, email, password);
+  }
+
+  logout() {
+    return signOut(this.auth);
   }
 }
 const AuthService = new Auth;
