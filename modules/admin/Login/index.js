@@ -19,7 +19,7 @@ function Login() {
   const onClickButton = () => {
     AuthService.login(formData?.email, formData?.password)
     .then(() => {
-      let backUrl = (router.query.back) ? router.query.back : '/admin';
+      let backUrl = (router.query.back) ? router.query.back : '/admin/dashboard';
       router.replace(backUrl);
     })
     .catch(error=>console.log(error));

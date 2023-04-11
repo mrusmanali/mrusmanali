@@ -1,2 +1,2 @@
-import Article from "@root/modules/Article";
+import Article from "@root/modules/front/Article";
 export default Article;

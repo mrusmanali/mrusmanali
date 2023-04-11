@@ -1,6 +1,8 @@
 @import 'variables';
+@import 'pallete';
 
 .sidebar {
+  position: relative;
   &_logo {
     width: 100%;
     display: flex;
@@ -8,5 +10,50 @@
     align-items: center;
     height: $headerHeight;
     justify-content: center;
+  }
+  &_list {
+    margin: 0;
+    padding: 0;
+    padding: 0 20px;
+    list-style: none;
+  }
+  &_item {
+    padding-bottom: 7px;
+  }
+  &_link {
+    height: 55px;
+    display: flex;
+    padding: 10px;
+    color: $neutral20;
+    align-items: center;
+    flex-direction: row;
+    border-radius: $borderRadius;
+    justify-content: space-between;
+
+    svg {
+      color: $primary30;
+    }
+    & > svg {
+      color: $neutral60;
+    }
+
+    &:hover {
+      background-color: $primary99;
+    }
+
+    .active & {
+      color: $primary100;
+      background-color: $primary40;
+
+      svg {
+        color: $neutral100;
+      }
+      & > svg {
+        color: $neutral100;
+      }
+    }
+  }
+  &_text {
+    margin: 0 15px;
   }
 }

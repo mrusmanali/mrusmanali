@@ -1,2 +1,2 @@
-import Home from "@root/modules/Home";
+import Home from "@root/modules/front/Home";
 export default Home;

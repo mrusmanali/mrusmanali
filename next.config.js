@@ -1,6 +1,13 @@
 const path = require('path')
 
 module.exports = {
+  async redirects() {
+    return [{
+      source: '/admin',
+      permanent: false,
+      destination: '/admin/dashboard',
+    }]
+  },
   images: {
     unoptimized: true,
     domains: ["firebasestorage.googleapis.com"]
