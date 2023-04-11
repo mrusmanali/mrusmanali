@@ -1,4 +1,4 @@
-import config from 'firebaseconfig';
+import config from '@root/firebaseconfig';
 import { initializeApp } from 'firebase/app';
 
 class Firebase {

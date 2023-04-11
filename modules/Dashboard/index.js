@@ -1,11 +1,14 @@
 import React from "react";
+import WithAuth from "@root/common/WithAuth";
+import Layout from "@root/common/Layout/Admin";
 
 import styles from "./styles.module.scss";
-import WithAuth from "@root/common/WithAuth";
 
 function Dashboard() {
   return (
-    <div className={syles.dashboard}>Dashboard</div>
+    <Layout>
+      <div className={styles.dashboard}>Dashboard</div>
+    </Layout>
   );
 }
 

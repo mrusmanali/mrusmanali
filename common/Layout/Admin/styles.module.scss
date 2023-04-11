@@ -1,1 +1,53 @@
 @import 'pallete';
+@import 'variables';
+
+.layout {
+  background-color: $neutral99;
+
+  &_appbar {
+    height: $headerHeight;
+    padding-left: $sidebarWidth;
+    border-bottom: 1px solid $neutral95;
+
+    &.collapsed {
+      padding-left: $sidebarWidth - 200;
+    }
+  }
+  &_drawer {
+    :global(.MuiDrawer-paper) {
+      width: $sidebarWidth;
+      border-color: $neutral95;
+      background-color: $primary100;
+
+      box-shadow: 0 7px 50px 0 rgba(0,0,0,0.1);
+    }
+
+    &.collapsed {
+      :global(.MuiDrawer-paper) {
+        width: $sidebarWidth - 200;
+      }
+    }
+  }
+  &_toggle {
+    z-index: 9999;
+    position: fixed;
+    top: $headerHeight;
+    left: $sidebarWidth;
+    transform: translate(-50%, -50%);
+
+    &.collapsed {
+      left: $sidebarWidth - 200
+    }
+  }
+  &_content {
+    margin: 20px;
+    padding: 40px;
+    min-height: 100vh;
+    margin-top: $headerHeight;
+    margin-left: $sidebarWidth;
+
+    &.collapsed {
+      margin-left: $sidebarWidth - 200;
+    }
+  }
+}

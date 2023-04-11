@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "@root/common/Header";
+import Header from "@root/common/Header/Main";
 import Footer from "@root/common/Footer";
 import { Container } from "@mui/material";
 
 import styles from './styles.module.scss';
 
-function MainLayout({children}) {
+function Layout({children}) {
   return (
     <div className={styles.mainlayout}>
       <Header />
@@ -17,4 +17,4 @@ function MainLayout({children}) {
   );
 }
 
-export default MainLayout;
+export default Layout;

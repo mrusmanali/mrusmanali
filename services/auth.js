@@ -1,8 +1,8 @@
+import { hasIn, isNull } from 'lodash';
 import { BehaviorSubject } from 'rxjs';
-import { filter as rxfilter } from 'rxjs/operators';
+import FirebaseService from '@root/services/firebase';
+import { filter as rxfilter, map as rxmap } from 'rxjs/operators';
 import { getAuth, onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
-import FirebaseService from './firebase';
-import { isNull } from 'lodash';
 
 class Auth {
   constructor() {
@@ -16,14 +16,15 @@ class Auth {
   init() {
     this.auth = getAuth(FirebaseService.app);
     onAuthStateChanged(this.auth, (user) => {
-      if(user) this.user.next(user);
-      else this.user.next(null);
+      if(!isNull(user)) this.user.next(user);
+      else this.user.next({});
     })
   }
 
   get $user() {
     return this.user.asObservable().pipe(
-      rxfilter(user=>!isNull(user))
+      rxfilter(user => !isNull(user)),
+      rxmap(user => hasIn(user, ['uid']))
     );
   }
 
