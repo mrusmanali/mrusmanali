@@ -1,3 +1,5 @@
+@import 'variables';
+
 @mixin bg-color($color, $opacity: 1) {
   background-color: $color; /* The Fallback */
   background-color: rgba($color, $opacity);
@@ -30,6 +32,11 @@
   }
 }
 
+@mixin bg-transparency($color, $opacity: 0.3) {
+  background-color: $color; /* The Fallback */
+  background-color: rgba($color, $opacity);
+}
+
 @mixin media-md {
   @media only screen and (max-width: 900px) {
     @content;
@@ -40,6 +47,12 @@
   @media only screen and (max-width: 600px) {
     @content;
   }
+}
+
+@mixin card($spacing: 15px) {
+  padding: $spacing;
+  border-radius: $borderRadius;
+  background-color: $neutral100;
 }
 
 @mixin dark() {

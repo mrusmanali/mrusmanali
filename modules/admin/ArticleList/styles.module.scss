@@ -1,0 +1,22 @@
+@import 'mixins';
+@import 'pallete';
+
+.articlelist {
+  &_topbar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    @include card(10px);
+  }
+  &_backlink {
+    color: $primary40;
+    border-radius: $borderRadius;
+    &:hover {
+      @include bg-transparency($primary40, 0.1);
+    }
+  }
+
+  &_body {
+    @include card();
+  }
+}

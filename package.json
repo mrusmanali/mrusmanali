@@ -12,6 +12,7 @@
     "@emotion/styled": "^11.10.6",
     "@fontsource/roboto": "^4.5.8",
     "@mui/material": "^5.11.13",
+    "@mui/x-data-grid": "^6.2.0",
     "@tabler/icons-react": "^2.11.0",
     "clsx": "^1.2.1",
     "firebase": "^9.19.1",

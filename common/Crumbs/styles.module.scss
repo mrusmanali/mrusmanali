@@ -1,0 +1,34 @@
+@import 'pallete';
+
+.crumbs {
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  flex-direction: row;
+  &_item {
+    display: inline-block;
+  }
+  &_link {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    &:hover {
+      color: $primary40;
+    }
+  }
+  &_sep {
+    margin: 0 7px;
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &_text {
+    max-width: 150px;
+    overflow: hidden;
+    font-weight: 600;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+  }
+}
