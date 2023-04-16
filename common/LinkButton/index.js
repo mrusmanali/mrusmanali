@@ -1,12 +1,17 @@
 import React from "react";
-
-import styles from './styles.module.scss';
 import { Button } from "@mui/material";
 
-function LinkButton({label, attributes}) {
+import styles from './styles.module.scss';
+
+function LinkButton({label, icon, attributes}) {
   return (
     <div className={styles.linkbutton}>
-      <Button disableElevation variant="contained" {...attributes}>{label}</Button>
+      <Button 
+        startIcon={icon} 
+        disableElevation 
+        variant="contained" {...attributes}>
+          {label}
+      </Button>
     </div>
   );
 }

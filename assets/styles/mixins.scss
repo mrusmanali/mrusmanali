@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'pallete';
 
 @mixin bg-color($color, $opacity: 1) {
   background-color: $color; /* The Fallback */
@@ -51,8 +52,9 @@
 
 @mixin card($spacing: 15px) {
   padding: $spacing;
-  border-radius: $borderRadius;
+  box-shadow: $fancyShadow;
   background-color: $neutral100;
+  border-radius: $borderRadius;
 }
 
 @mixin dark() {

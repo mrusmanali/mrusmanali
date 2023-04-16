@@ -17,6 +17,39 @@
   }
 
   &_body {
-    @include card();
+    overflow: hidden;
+    @include card(0px);
+  }
+}
+
+.datagrid {
+  &_head {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &_table {
+    width: 100%;
+
+    thead {
+      background-color: $neutral99;
+      td {
+        font-size: 14px;
+        font-weight: bold;
+        color: $primary40;
+      }
+    }
+    td {
+      padding: 15px;
+      border-bottom: 1px solid $neutral99;
+    }
+  }
+  &_footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

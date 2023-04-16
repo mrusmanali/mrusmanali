@@ -1,0 +1,15 @@
+@import 'pallete';
+
+.listsearch {
+  &_input {
+    :global(.MuiOutlinedInput-root) {
+      background-color: $neutral100;
+    }
+    :global(.MuiOutlinedInput-root.Mui-focused fieldset) {
+      border-color: $primary40;
+    }
+    :global(label.Mui-focused) {
+      color: $primary40;
+    }
+  }
+}

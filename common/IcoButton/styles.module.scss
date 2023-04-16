@@ -1,0 +1,43 @@
+@import 'pallete';
+@import 'mixins';
+@import 'variables';
+
+.icobutton {
+  border-radius: $borderRadius;
+  &:global(.primary) {
+    color: $primary40;
+    &:hover {
+      @include bg-transparency($primary40, 0.1);
+    }
+  }
+  &:global(.neutral0) {
+    color: $neutral10;
+    &:hover {
+      @include bg-transparency($neutral10, 0.1);
+    }
+  }
+  &:global(.warning) {
+    color: $warning500;
+    &:hover {
+      @include bg-transparency($warning500, 0.1);
+    }
+  }
+  &:global(.success) {
+    color: $success500;
+    &:hover {
+      @include bg-transparency($success500, 0.1);
+    }
+  }
+  &:global(.error) {
+    color: $error500;
+    &:hover {
+      @include bg-transparency($error500, 0.1);
+    }
+  }
+  &:global(.info) {
+    color: $info500;
+    &:hover {
+      @include bg-transparency($info500, 0.1);
+    }
+  }
+}

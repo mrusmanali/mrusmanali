@@ -3,6 +3,8 @@
 
 .linkbutton {
   :global(.MuiButton-root) {
+    height: 40px;
+    font-weight: 600;
     background-color: $primary40;
 
     &:hover {
