@@ -6,6 +6,10 @@ class Articles {
     return this.instance;
   }
 
+  find({search = '', page, limit, sort}) {
+    return DatabaseService.fetchList('articles');
+  }
+
   createArticle(data) {
     return DatabaseService.addDocument('articles', data);
   }

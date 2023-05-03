@@ -1,34 +1,42 @@
 @import 'pallete';
 
 .crumbs {
+  height: 58px;
   display: flex;
-  font-size: 15px;
   align-items: center;
   flex-direction: row;
-  &_item {
-    display: inline-block;
+  // padding: 8px 20px 8px 20px;
+  justify-content: space-between;
+
+
+  &_back {
+    padding: 0;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    color: $primary30;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+  }
+
+  &_list {
+    display: flex;
+    margin: 0 20px;
+    flex-direction: row;
+  }
+  &_item {}
+  &_sep {
+    margin: 0 10px;
+    display: block;
   }
   &_link {
-    cursor: pointer;
-    display: inline-block;
-    vertical-align: middle;
+
     &:hover {
-      color: $primary40;
+      color: $primary30;
     }
   }
-  &_sep {
-    margin: 0 7px;
-    font-size: 13px;
-    display: inline-block;
-    vertical-align: middle;
-  }
   &_text {
-    max-width: 150px;
-    overflow: hidden;
-    font-weight: 600;
-    white-space: nowrap;
-    display: inline-block;
-    vertical-align: middle;
-    text-overflow: ellipsis;
+    font-weight: bold;
   }
 }

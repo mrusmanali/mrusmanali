@@ -1,0 +1,59 @@
+@import 'mixins';
+@import 'pallete';
+
+.articlelist {
+  &_crumbs {
+    @include card(5px);
+  }
+  &_topbar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    @include card(10px);
+  }
+  &_backlink {
+    color: $primary40;
+    border-radius: $borderRadius;
+    &:hover {
+      @include bg-transparency($primary40, 0.1);
+    }
+  }
+
+  &_body {
+    overflow: hidden;
+    @include card(0px);
+  }
+}
+
+.datagrid {
+  &_head {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &_table {
+    width: 100%;
+
+    thead {
+      background-color: $neutral99;
+      td {
+        font-size: 14px;
+        font-weight: bold;
+        color: $primary40;
+      }
+    }
+    td {
+      padding: 15px;
+      border-bottom: 1px solid $neutral99;
+    }
+  }
+  &_footer {
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -1,4 +1,4 @@
-import { IconAdjustments, IconChevronRight, IconForms, IconHome, IconLanguage, IconLayoutBoard } from "@tabler/icons-react";
+import { IconAdjustments, IconChevronRight, IconForms, IconHome, IconLanguage, IconLayoutBoard, IconNotes, IconSitemap } from "@tabler/icons-react";
 
 export default [
   {
@@ -12,7 +12,14 @@ export default [
     key: 'articles',
     title: 'Articles',
     link: '/admin/articles',
-    icon: <IconHome stroke={1.8} size={25} />,
+    icon: <IconNotes stroke={1.8} size={25} />,
+    chevron: <IconChevronRight stroke={1.8} size={22} />,
+  },
+  {
+    key: 'categories',
+    title: 'Categories',
+    link: '/admin/categories',
+    icon: <IconSitemap stroke={1.8} size={25} />,
     chevron: <IconChevronRight stroke={1.8} size={22} />,
   },
 ]

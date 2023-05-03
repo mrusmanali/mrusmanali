@@ -1,36 +1,26 @@
 import clsx from "clsx";
-import React from "react";
-import Crumbs from "@root/common/Crumbs";
-import Layout from "@root/common/Layout/Admin";
-import { IconButton, Stack } from "@mui/material";
-import { IconArrowLeft, IconEye, IconPlus, IconTrash } from "@tabler/icons-react";
-
-import styles from "./styles.module.scss";
 import { map } from "lodash";
+import { Stack } from "@mui/material";
+import Crumbs from "@root/common/Crumbs";
 import IcoButton from "@root/common/IcoButton";
+import Layout from "@root/common/Layout/Admin";
 import Pagination from "@root/common/Pagination";
 import LinkButton from "@root/common/LinkButton";
 import ListSearch from "@root/common/ListSearch";
+import React, { useEffect, useState } from "react";
+import ArticlesService from "@root/services/articles";
+import { IconArrowLeft, IconEye, IconPlus, IconTrash } from "@tabler/icons-react";
 
+import styles from "./styles.module.scss";
 
 function ArticleList() {
+  const [listData, setListData] = useState([]);
 
-  const list = [{
-    key: 1,
-    firstname: 'Usman',
-    lastname: 'Ali Shauket',
-    email: 'mrusmanali95@gmail.com'
-  },{
-    key: 1,
-    firstname: 'Imtiaz',
-    lastname: 'Ali Shauket',
-    email: 'imtiazalishauket@gmail.com'
-  },{
-    key: 1,
-    firstname: 'Abdul',
-    lastname: 'Raffey',
-    email: 'abdulraffey@gmail.com'
-  }]
+  useEffect(() => {
+    ArticlesService.find({})
+    .then(setListData)
+    .catch(error=>console.log(error))
+  }, []);
 
   return (
     <Layout>
@@ -71,20 +61,20 @@ function ArticleList() {
                 <thead>
                   <tr>
                     <td align="center" width={50}>No</td>
-                    <td>Firstname</td>
-                    <td>Lastname</td>
-                    <td>Email</td>
+                    <td>Title</td>
+                    <td>Category</td>
+                    <td>Author</td>
                     <td align="center" width={120}>Actions</td>
                   </tr>
                 </thead>
                 <tbody>
-                  {map(list, (item, index) => {
+                  {map(listData, (item, index) => {
                     return (
-                      <tr key={item?.key}>
+                      <tr key={item?.id}>
                         <td align="center">{index+1}</td>
-                        <td>{item?.firstname}</td>
-                        <td>{item?.lastname}</td>
-                        <td>{item?.email}</td>
+                        <td>{item?.title}</td>
+                        <td>Productivity</td>
+                        <td>Usman</td>
                         <td align="center">
                           <Stack direction="row" spacing={1}>
                             <IcoButton color="neutral">
